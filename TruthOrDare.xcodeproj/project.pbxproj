@@ -13,6 +13,8 @@
 		BFD4D24B26BAEC5500596AAB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFD4D24A26BAEC5500596AAB /* Preview Assets.xcassets */; };
 		BFD4D25626BAEC5500596AAB /* TruthOrDareTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD4D25526BAEC5500596AAB /* TruthOrDareTests.swift */; };
 		BFD4D26126BAEC5500596AAB /* TruthOrDareUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD4D26026BAEC5500596AAB /* TruthOrDareUITests.swift */; };
+		C8F3211726BAF99D00C3DF65 /* TruthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F3211626BAF99D00C3DF65 /* TruthView.swift */; };
+		C8F3211926BAFB8000C3DF65 /* DareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F3211826BAFB8000C3DF65 /* DareView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,8 @@
 		BFD4D25C26BAEC5500596AAB /* TruthOrDareUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TruthOrDareUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFD4D26026BAEC5500596AAB /* TruthOrDareUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TruthOrDareUITests.swift; sourceTree = "<group>"; };
 		BFD4D26226BAEC5500596AAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C8F3211626BAF99D00C3DF65 /* TruthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TruthView.swift; sourceTree = "<group>"; };
+		C8F3211826BAFB8000C3DF65 /* DareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DareView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,8 @@
 			children = (
 				BFD4D24326BAEC5200596AAB /* TruthOrDareApp.swift */,
 				BFD4D24526BAEC5200596AAB /* ContentView.swift */,
+				C8F3211626BAF99D00C3DF65 /* TruthView.swift */,
+				C8F3211826BAFB8000C3DF65 /* DareView.swift */,
 				BFD4D24726BAEC5500596AAB /* Assets.xcassets */,
 				BFD4D24C26BAEC5500596AAB /* Info.plist */,
 				BFD4D24926BAEC5500596AAB /* Preview Content */,
@@ -259,7 +265,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8F3211926BAFB8000C3DF65 /* DareView.swift in Sources */,
 				BFD4D24626BAEC5200596AAB /* ContentView.swift in Sources */,
+				C8F3211726BAF99D00C3DF65 /* TruthView.swift in Sources */,
 				BFD4D24426BAEC5200596AAB /* TruthOrDareApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
