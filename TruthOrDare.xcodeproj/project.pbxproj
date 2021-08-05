@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A068203C26BC56BC00D3EB68 /* Dare.swift in Sources */ = {isa = PBXBuildFile; fileRef = A068203B26BC56BC00D3EB68 /* Dare.swift */; };
 		BFD4D24426BAEC5200596AAB /* TruthOrDareApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD4D24326BAEC5200596AAB /* TruthOrDareApp.swift */; };
 		BFD4D24626BAEC5200596AAB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD4D24526BAEC5200596AAB /* ContentView.swift */; };
 		BFD4D24826BAEC5500596AAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFD4D24726BAEC5500596AAB /* Assets.xcassets */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A068203B26BC56BC00D3EB68 /* Dare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dare.swift; sourceTree = "<group>"; };
 		BFD4D24026BAEC5200596AAB /* TruthOrDare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TruthOrDare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFD4D24326BAEC5200596AAB /* TruthOrDareApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TruthOrDareApp.swift; sourceTree = "<group>"; };
 		BFD4D24526BAEC5200596AAB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
