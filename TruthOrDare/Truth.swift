@@ -8,38 +8,38 @@
 import SwiftUI
 
 struct Truth: View {
-    @ObservedObject var truths = TruthLists()
-    @State private var showingTruth = false
+    @State private var truths = [Truths]()
+    //@State private var showingTruth = false
     var body: some View {
         NavigationView{
-            List{
-                //finally
-                ForEach(truths.items, id: \.id) { item in
-                    HStack {
-                        VStack {
-                            Text(item.truthName)
-                            
-                        }
-                        Spacer()
-                        Button("Show truth") {
-                            showingTruth = true
-                        }
-                        .alert(isPresented: $showingTruth, content: {
-                            //currently this is only displaying one truth ever and I need to give each thing an id
-                            Alert(title: Text("Your Truth is:"),
-                                  message: Text(item.truthContent),
-                                  dismissButton: .default(Text("OK")))
-                        })
-                        
-                    }
-                }
-                
-                
-                
+            List(truths){ truth in
+                NavigationLink("\(truth.truthName)",
+                               
+                               destination: Text(truth.truthContent)
+                                .padding()
+               
+                )
                 
             }
-            .navigationBarTitle("To Do List", displayMode: .inline)
+            .navigationBarTitle("Truthes", displayMode: .inline)
         }
+        .onAppear(perform: {
+                          getTruths()
+                      })
+    }
+    func getTruths() {
+        truths.append(Truths( truthName: "Truth", truthContent: "What is your favorite food?"))
+        truths.append(Truths( truthName: "Truth", truthContent: "What is your biggest fear?"))
+        truths.append(Truths( truthName: "Truth", truthContent: "Have you ever cheated in an exam?"))
+        truths.append(Truths( truthName: "Truth", truthContent: "Have you ever broken the law?"))
+        truths.append(Truths( truthName: "Truth", truthContent: "What's the biggest mistake you've ever made?"))
+        truths.append(Truths( truthName: "Truth", truthContent: "Have you ever peed in the shower?"))
+        truths.append(Truths( truthName: "Truth", truthContent: "What's the biggest misconception about you?"))
+        truths.append(Truths( truthName: "Truth", truthContent: "What's the most trouble you've been in?"))
+        truths.append(Truths( truthName: "Truth", truthContent: "Who is your crush?"))
+        truths.append(Truths( truthName: "Truth", truthContent: " When was the last time you peed in bed?"))
+        truths.append(Truths( truthName: "Truth", truthContent: " What is the biggest lie you have ever told?"))
+        
     }
 }
 

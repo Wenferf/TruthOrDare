@@ -8,9 +8,9 @@
 import Foundation
 
 class TruthLists: ObservableObject {
-    @Published var items = [Truths( truthName: "Truth", truthContent:"What is your biggest fear"),
-                             Truths(truthName: "Truth", truthContent:"What is your favorite food"),
-                             Truths(truthName: "Truth", truthContent:"some truth")]
+    @Published var items = [Truths(truthName: "Truth", truthContent:"What is your biggest fear"),
+    Truths(truthName: "Truth", truthContent:"What is your favorite food"),
+    Truths(truthName: "Truth", truthContent:"some truth")]
     //only need one pair of square brakets
 
  }
