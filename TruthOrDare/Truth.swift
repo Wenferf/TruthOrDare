@@ -21,7 +21,7 @@ struct Truth: View {
                 )
                 
             }
-            .navigationBarTitle("Truthes", displayMode: .inline)
+            .navigationBarTitle("Truths", displayMode: .inline)
         }
         .onAppear(perform: {
                           getTruths()
