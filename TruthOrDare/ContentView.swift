@@ -13,33 +13,34 @@ struct ContentView: View {
     var body: some View {
         VStack {
             Text("Truth or Dare")
-                .font(.title)
+                .font(.largeTitle)
                 .fontWeight(.bold)
                 .padding()
             Text("Tap the Gray Box to see Truth or Dare")
+                .font(.headline)
                 .padding()
             CustomLetterBox(color: .gray, text: task)
                 .onTapGesture {
-                    withAnimation(Animation.default) {
-                        if let random = options.randomElement() {
-                            task = String(random)
-                        }
+                    if let random = options.randomElement() {
+                        task = String(random)
                     }
                 }
-                .rotation3DEffect(
-                    .init(degrees: task == "" ? 180 : 0),
-                    axis: (x: 0.0, y: 1.0, z: 0.0)
-                )
                 .preferredColorScheme(.dark)
             NavigationView{
-                HStack{
-                    NavigationLink("Truth", destination: Truth())
-                        .padding(100)
-                    NavigationLink("Dare", destination: DareView())
+                VStack{
+                    HStack{
+                        NavigationLink("Truth", destination: Truth())
+                            .font(.title)
+                            .padding(55)
+                        NavigationLink("Dare", destination: DareView())
+                            .font(.title)
+                            .padding(55)
+                    }
                     Spacer()
                 }
             }
         }
+        .background(LinearGradient(gradient: Gradient(colors: [.blue, .white, .pink]), startPoint: .topLeading, endPoint: .bottomTrailing))
     }
 }
 
@@ -50,10 +51,10 @@ struct CustomLetterBox: View{
         ZStack{
             color
             Text(text)
-                .font(.system(size: 40))
+                .font(.system(size: 50))
                 .fontWeight(.heavy)
         }
-        .frame(width: 120, height: 120, alignment: .center)
+        .frame(width: 160, height: 160, alignment: .center)
     }
 }
 
