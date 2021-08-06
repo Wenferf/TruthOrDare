@@ -25,6 +25,7 @@ struct DareView: View {
             getDares()
         })
     }
+    
     func getDares() {
         dares.append(Dare(title: "Dare",
                           content: "Take an embarrassing selfie and post it as your profile picture."))

@@ -14,19 +14,17 @@ struct Truth: View {
         NavigationView{
             List(truths){ truth in
                 NavigationLink("\(truth.truthName)",
-                               
                                destination: Text(truth.truthContent)
                                 .padding()
-               
                 )
-                
             }
             .navigationBarTitle("Truths", displayMode: .inline)
         }
         .onAppear(perform: {
-                          getTruths()
-                      })
+            getTruths()
+        })
     }
+    
     func getTruths() {
         truths.append(Truths( truthName: "Truth", truthContent: "What is your favorite food?"))
         truths.append(Truths( truthName: "Truth", truthContent: "What is your biggest fear?"))
@@ -39,7 +37,6 @@ struct Truth: View {
         truths.append(Truths( truthName: "Truth", truthContent: "Who is your crush?"))
         truths.append(Truths( truthName: "Truth", truthContent: " When was the last time you peed in bed?"))
         truths.append(Truths( truthName: "Truth", truthContent: " What is the biggest lie you have ever told?"))
-        
     }
 }
 
@@ -48,6 +45,7 @@ struct Truth_Previews: PreviewProvider {
         Truth()
     }
 }
+
 struct Truths: Identifiable {
     var id = UUID()
     var truthName = String()
